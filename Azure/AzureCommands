@@ -1,0 +1,5 @@
+az account	Manage Azure subscription information.
+az disk	Manage Azure Managed Disks.
+az disk-access	Manage disk access resources.
+az disk-encryption-set	Disk Encryption Set resource.
+az disk-pool	Manage Azure disk pool.
