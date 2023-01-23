@@ -1,0 +1,28 @@
+aws configure --profile profilename
+ 
+
+Output format
+
+aws configure output format {json, yaml, yaml-stream, text, table}
+ 
+
+Specify your AWS Region
+
+aws configure region (region-name)
+ 
+ 
+API Gateway
+List API Gateway IDs and Names
+
+aws apigateway get-rest-apis | jq -r ‘.items[ ] | .id+” “+.name’
+ 
+
+List API Gateway keys
+
+aws apigateway get-api-keys | jq -r ‘.items[ ] | .id+” “+.name’
+ 
+
+List API Gateway domain names
+
+aws apigateway get-domain-names | jq -r ‘.items[ ] | .domainName+” “+.regionalDomainName’
+
